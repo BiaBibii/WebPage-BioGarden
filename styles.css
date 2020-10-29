@@ -1,0 +1,113 @@
+body{
+	background: #A5FDA0;
+}
+
+div#app-container {
+	background: #D8FDA0;
+	min-height: 500px;
+	margin-top: 10px;
+	font-family: Georgia;
+	width: 1550px;
+
+}
+
+h1{
+	
+	color:#2A9510;
+}
+div.row{
+	background: white;
+}
+
+.navbar-inverse{
+	background-color: #174F09;
+	font-color:#A5FDA0;
+}
+.navbar-brand{
+	float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 44px;
+    line-height: 20px;
+    width: 100px;
+
+}
+nav.navbar a.navbar-brand{
+    width:310px;
+}
+
+
+div.col {
+  background: #D8FDA0;
+}
+div#produse{
+  padding: 10px;
+}
+div.produs {
+  margin-bottom: 20px;
+  text-align: center;
+  background: white;
+}
+div.produs img {
+  margin: 0 auto;
+  padding: 10px;
+}
+li{
+	display: inline;
+	padding-right: 5px;
+	padding-left: 5px;
+	justify-content: center;
+}
+div.form-control {
+	width: 30%;
+}
+
+::webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}
+
+}
+
